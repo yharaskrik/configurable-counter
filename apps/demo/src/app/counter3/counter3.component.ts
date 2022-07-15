@@ -3,20 +3,20 @@ import { CommonModule } from '@angular/common';
 import { Counter, provideCounter } from '@yharaskrik/counter';
 
 @Component({
-  selector: 'configurable-counter-counter2',
-  template: ` <div>Counter 2 works! {{ counter$ | async | number }}</div>`,
-  styles: [``],
+  selector: 'configurable-counter-counter3',
   standalone: true,
+  imports: [CommonModule],
+  template: ` <div>counter3 works! {{ counter$ | async | number }}</div> `,
+  styles: [],
   providers: [
     provideCounter({
       interval: 1000,
-      step: 2,
+      step: 3,
       start: 0,
     }),
   ],
-  imports: [CommonModule],
 })
-export class Counter2Component {
+export class Counter3Component {
   readonly counter$ = this.counter.counter$;
 
   constructor(private counter: Counter) {}

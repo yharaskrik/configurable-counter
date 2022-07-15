@@ -17,7 +17,8 @@
     "paths": {
       "@yharaskrik/configurable-counter": [
         "libs/configurable-counter/src/index.ts"
-      ]
+      ],
+      "@yharaskrik/counter": ["libs/counter/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

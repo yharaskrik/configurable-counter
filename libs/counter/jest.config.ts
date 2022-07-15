@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'configurable-counter',
+  displayName: 'counter',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -9,7 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../coverage/libs/configurable-counter',
+  coverageDirectory: '../../coverage/libs/counter',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

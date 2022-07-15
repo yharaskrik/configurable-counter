@@ -2,7 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "configurable-counter": "libs/configurable-counter",
+    "counter": "libs/counter",
     "demo": "apps/demo",
     "demo-e2e": "apps/demo-e2e"
   }
