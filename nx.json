@@ -39,7 +39,10 @@
       "unitTestRunner": "jest"
     },
     "@nrwl/angular:component": {
-      "style": "scss"
+      "style": "scss",
+      "inlineStyles": true,
+      "inlineTemplates": true,
+      "standalone": true
     }
   },
   "defaultProject": "demo"
