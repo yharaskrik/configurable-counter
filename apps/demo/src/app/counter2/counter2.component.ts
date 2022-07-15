@@ -1,27 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import {
-  ConfigurableCounter,
-  provideConfigurableCounter,
-} from '@yharaskrik/configurable-counter';
-import { AsyncPipe, CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'configurable-counter-counter2',
-  templateUrl: './counter2.component.html',
-  styleUrls: ['./counter2.component.css'],
+  template: ` <div>Counter 2 works!</div>`,
+  styles: [``],
   standalone: true,
-  providers: [
-    provideConfigurableCounter({
-      interval: 1,
-      start: 0,
-      step: 0.5,
-    }),
-  ],
+  providers: [],
   imports: [CommonModule],
 })
-export class Counter2Component implements OnInit {
-  counter$ = this.configurableCounter.counter$;
-  constructor(private configurableCounter: ConfigurableCounter) {}
-
-  ngOnInit(): void {}
-}
+export class Counter2Component {}
